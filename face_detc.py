@@ -1,7 +1,7 @@
 import cv2
 
-face_cas=cv2.CascadeClassifier('H:\Codes\\venv\Lib\site-packages\cv2\data\haarcascade_frontalface_default.xml')
-img=cv2.imread("H:\\Codes\\images\\test.jpg")
+face_cas=cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
+img=cv2.imread("test.jpg")
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 faces = face_cas.detectMultiScale(img)
 
